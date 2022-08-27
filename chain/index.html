@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chain</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <a id="tutorial" href="http://jquery.com" target="_self">jQuery</a>
+
+
+  <ul class="first">
+    <li class="foo">item1</li>
+    <li>list item 2</li>
+    <li class="bar">list item 3</li>
+  </ul>
+
+  <ul class="second">
+    <li class="foo">list item 1</li>
+    <li>list item 2</li>
+    <li class="bar">list item 3</li>
+  </ul>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2"></script>
+  <script type="text/javascript">
+
+    jQuery('#tutorial').attr('href', 'http://jquery.org').attr('target','_blank').css('color', 'led');
+
+    // (function($){
+    //   $('ul.foo').click(function() {
+    //     $('li',this).css('background-color', 'red');
+    //   })
+    // })(jQuery)
+
+</script>
+</body>
+</html>
